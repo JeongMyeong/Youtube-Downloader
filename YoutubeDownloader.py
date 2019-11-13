@@ -4,7 +4,6 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow, QDe
 from pytube import YouTube # !pip install pytube
 from PyQt5.QtWidgets import QLabel, QComboBox, QProgressBar, QListWidget,QFileDialog
 from PyQt5.QtCore import QThread, pyqtSignal, QFile
-from PyQt5.QtGui import QIcon
 import time
 import YoutubeCrawl
 import processed_classification
@@ -21,8 +20,6 @@ class YoutubeDownloader(QWidget):
     def initUI(self):
         self.center()
         self.setGeometry(500, 500, 600, 500)
-        self.setWindowTitle('Youtube Downloader')
-        self.setWindowIcon(QIcon('C:/Users/JeongMyeong/Desktop/4-2/공모전/icon.png'))
         ## Button
         self.saveBTN = QPushButton("저장", self)
         self.saveBTN.setGeometry(490, 400, 80,55)
@@ -91,10 +88,10 @@ class YoutubeDownloader(QWidget):
 
         X = self.processed.sent_to_vec(self.download_stream.title)
         print(X)
-        if os.path.isdir("{}/{}".format(self.path_textbox.text(), self.processed.predict(X))) == False:
-            os.mkdir("{}/{}".format(self.path_textbox.text(), self.processed.predict(X)))
-
-        self.download_stream.download("{}/{}".format(self.path_textbox.text(), self.processed.predict(X)))
+        # if os.path.isdir("{}/{}".format(self.path_textbox.text(), self.processed.predict(X))) == False:
+        #     os.mkdir("{}/{}".format(self.path_textbox.text(), self.processed.predict(X)))
+        #
+        # self.download_stream.download("{}/{}".format(self.path_textbox.text(), self.processed.predict(X)))
 
     def search_cmd(self):
         self.progress.setValue(70)

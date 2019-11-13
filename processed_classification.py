@@ -11,10 +11,10 @@ warnings.filterwarnings('ignore')
 
 class ProcessSentence:
     def __init__(self):
-        self.cnn_model = load_model('C:/Users/JeongMyeong/Desktop/Jupyter/test_model.h5')
+        self.cnn_model = load_model('C:/Users/JeongMyeong/Desktop/Jupyter/newmodel2.h5')
         self.scaler = stdload('C:/Users/JeongMyeong/Desktop/Jupyter/std_scaler.bin')
-        self.word2vec_model = Word2Vec.load('C:/Users/JeongMyeong/Desktop/word-embeddings/word2vec/word2vec')
-        # self.word2vec_model = models.fasttext.load_facebook_model('C:/Users/JeongMyeong/Desktop/word-embeddings/fasttext/fasttext.bin')
+#         self.word2vec_model = Word2Vec.load('C:/Users/JeongMyeong/Desktop/word-embeddings/word2vec/word2vec')
+        self.word2vec_model = models.fasttext.load_facebook_model('C:/Users/JeongMyeong/Desktop/word-embeddings/fasttext/fasttext.bin')
         self.tagger = Okt()
         self.subjects = {0: '게임'
             , 1: '음악'
@@ -48,7 +48,7 @@ class ProcessSentence:
 
 if __name__ == '__main__':
     test = ProcessSentence()
-    X = test.sent_to_vec('빈지노 ')
+    X = test.sent_to_vec('이석현 애쉬 캐리')
     print(test.predict(X))
 
 
