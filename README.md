@@ -20,5 +20,12 @@
   
 # 구현
   - 사용 언어 : Python
-  - 프로젝트에 주로 사용된 라이브러리 : [PyQT5](https://pypi.org/project/PyQt5/), [Keras(backend=tensorflow)](https://www.tensorflow.org/guide/keras?hl=ko), [konlpy](https://konlpy-ko.readthedocs.io/ko/v0.4.3/), [gensim](https://pypi.org/project/gensim/)
-  - 
+  - 프로젝트에 주로 사용된 라이브러리 : [Pytube](https://python-pytube.readthedocs.io/en/latest/), [PyQT5](https://pypi.org/project/PyQt5/), [Keras(backend=tensorflow)](https://www.tensorflow.org/guide/keras?hl=ko), [konlpy](https://konlpy-ko.readthedocs.io/ko/v0.4.3/), [gensim](https://pypi.org/project/gensim/)
+  ### Source
+  - 분류에 사용될 데이터를 수집 : [YoutubeCrawl.py](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/YoutubeCrawl.py)
+  - 수집한 데이터를 학습 : [Subject_Classification.ipynb](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/Subject_Classification.ipynb)
+  - PyQT5로 GUI 프로그램 제작 : [YoutubeDownloader.py](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/YoutubeDownloader.py)
+  - 프로그램에서 처리되는 부분(데이터분류, 유튜브 정보 받아오기) : [processed_classification.py](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/processed_classification.py)
+ 
+ # Classification Model
+   <img src="photo/model.png" width="100" height="500"> 
