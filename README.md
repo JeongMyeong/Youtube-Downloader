@@ -27,5 +27,20 @@
   - PyQT5로 GUI 프로그램 제작 : [YoutubeDownloader.py](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/YoutubeDownloader.py)
   - 프로그램에서 처리되는 부분(데이터분류, 유튜브 정보 받아오기) : [processed_classification.py](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/processed_classification.py)
  
- # Classification Model
+# Classification Model
+  ### 학습데이터
+    - 게임, 음악, IT 관련 유튜브 영상의 제목 약 2400개
+    - 게임 : 915개
+    - 음악 : 788개
+    - IT   : 741개
+  ### 학습 모델  
    <img src="photo/model.png" width="200" height="700"> 
+  
+  ### 모델 성능
+   - 오차행렬(게임, 음악, IT 순)
+   <img src="photo/confusion_matrix.png" width="177" height="64"> 
+   - 검증 데이터셋에 대한 분류 정확도  
+     - 약 91.5%  
+     
+# 사용방법
+  이 프로그램의 사용방법은 간단하다. 유튜브에서 검색하듯이 키워드로 검색을 하여 다운로드 받고 싶은 영상을 클릭 후 [해상도 보기] 버튼을 눌려 다운로드 하고싶은 화질을 누른다. 그 후 다운로드 받을 폴더를 지정하고 저장하면 해당 폴더에 저장이 된다. [자동분류]를 체크하면 동영상 파일을 자동으로 분류하여 폴더가 생성되고 저장이 된다. [자동분류] 체크를 해제하면 동영상 파일은 지정한 폴더에 저장이 된다.
