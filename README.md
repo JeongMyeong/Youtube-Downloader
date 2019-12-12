@@ -34,7 +34,7 @@
     - 음악 : 788개
     - IT   : 741개
   ### 학습 모델  
-   <img src="photo/model.png" width="200" height="700"> 
+   <img src="photo/model.png" width="30%" height="30%"> 
   
   ### 모델 성능
    - 오차행렬(게임, 음악, IT 순)
