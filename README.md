@@ -28,4 +28,4 @@
   - 프로그램에서 처리되는 부분(데이터분류, 유튜브 정보 받아오기) : [processed_classification.py](https://github.com/JeongMyeong/Youtube-Downloader/blob/master/processed_classification.py)
  
  # Classification Model
-   <img src="photo/model.png" width="100" height="500"> 
+   <img src="photo/model.png" width="200" height="700"> 
