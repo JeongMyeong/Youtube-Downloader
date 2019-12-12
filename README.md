@@ -1,3 +1,9 @@
-# Youtube-Downloader-with-Classification
-YoutubeDownloader using Python.
- 
+# Youtube-Downloader with classification function
+- 분류기능이 있는 유튜브 다운로드 프로그램입니다.
+
+# 팀
+- 팀명 : JM
+- 팀원 : 최정명(1인)
+
+# 작품의 개요 및 기대효과
+  - 최근 유튜브 혹은 네이버tv 등 스트리밍 방식으로 영상을 시청할 수 있는 서비스가 있지만 영상 데이터인 만큼 많은 데이터가 소모되는것이 큰 단점이다. 유튜브를 통해 1시간 동안 동영상을 시청할 시 대략 [1.1기가의 데이터가 소모된다](https://mynotepad.tistory.com/448)는 실험 결과가 있다. 요즘은 무제한 데이터 요금제가 존재하지만 일정 데이터 사용량의 제한을 초과하면 동영상 스트리밍이 안될 정도로 느리게 느리게 하는 속도 제한 제약 또한 존재한다.
